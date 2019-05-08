@@ -7,9 +7,9 @@ class Todo extends Component {
         return (
 <div>
 <h1>Todo List</h1>
-<ol>
+<ul>
     <li>Wash dishes</li>
-</ol>
+</ul>
 <input type="text"/>
 <button>Add Todos</button>
 </div>

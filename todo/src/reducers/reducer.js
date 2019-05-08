@@ -1,4 +1,4 @@
-import { ADDTODO } from './todo/src/actions/action.js';
+import { ADDTODO } from '../actions/action.js';
 
 const initialState = {
     todos: []
