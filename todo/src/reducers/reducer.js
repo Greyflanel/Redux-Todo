@@ -8,11 +8,12 @@ const initialState = [
     }
 ]
 
-export default (state = initialState, action) => {
 
+export default (state = initialState, action) => {
+console.log(state);
     switch (action.type) {
         case ADDTODO:
-        return Object.assign([], state).concat({
+        return Object.assign([], state).push({
             value: action.payload.value,
             completed: action.payload.completed
         })
