@@ -9,7 +9,6 @@ class Todo extends Component {
       <div>
         <h1>Todo List</h1>
         <ul>
-          <li>Wash dishes</li>
         </ul>
         <input type="text" />
         <button>Add Todos</button>

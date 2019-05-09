@@ -17,7 +17,7 @@ addTodo(event) {
   event.preventDefault();
   this.props.addTodo({
     value: this.state.newTodo,
-    complete: false
+    completed: false
   });
   this.setState({
     newTodo: ""
