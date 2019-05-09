@@ -7,7 +7,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      newTodo: ""
+      todo: ""
     };
   
   // this.addTodo = this.addTodo.bind(this);
@@ -16,11 +16,11 @@ class App extends Component {
 addTodo(event) {
   event.preventDefault();
   this.props.addTodo({
-    value: this.state.newTodo,
+    value: this.state.todo,
     completed: false
   });
   this.setState({
-    newTodo: ""
+    todo: ""
   });
 };
 
