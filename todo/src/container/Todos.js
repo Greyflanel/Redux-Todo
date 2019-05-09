@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { addedTodo, deleteTodo } from "../actions/action";
+import { addedTodo } from "../actions/action";
 
 class Todo extends Component {
   state = {
@@ -18,7 +18,9 @@ class Todo extends Component {
   };
 
   render() {
-    console.log(this.props.todos[0]);
+    // console.log(this.props.todos[0]);
+    console.log(this.props);
+    
 
     return (
       <div>

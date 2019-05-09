@@ -10,13 +10,14 @@ const initialState = [
 
 
 export default (state = initialState, action) => {
-console.log(state);
+console.log(action.type);
     switch (action.type) {
         case ADDTODO:
-        return Object.assign([], state).push({
-            value: action.payload.value,
-            completed: action.payload.completed
-        })
+        return state.concat(action.payload)
+        // return Object.assign([], state).push({
+        //     value: action.payload.value,
+        //     completed: action.payload.completed
+        // })
         case DELETE_TODO:
         return Object.assign([], state).filter((todo, index) => {
             return todo.id !== index;
